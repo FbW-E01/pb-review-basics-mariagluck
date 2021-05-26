@@ -14,16 +14,17 @@ const myString = "Hello, from the other side..!";
 
 const singleQuoteString = 'I must\'ve\ called a thousand times';
 
+
 // 5. Make a variable and assign a string to that variable using a template literal. Make sure that variable cannot be changed.
 
-const tempLiteralString = `${myString}. I'm in California dreaming about who we used to be`;
+const tempLiteralString = `${myString} ${singleQuoteString}... I'm in California dreaming about who we used to be.`;
 console.log(tempLiteralString);
-// example for fun:  Hello, from the other side..!. I'm in California dreaming about who we used to be
+// example for fun:  Hello, from the other side..! I must've called a thousand times... I'm in California dreaming about who we used to be.
 
 // 6. Make a variable and assign an empty string to that variable using a template literal. Make sure that variable *can* be changed.
 
 let emptyString = "";
-let tempLiteral2 = ` ${emptyString}`;
+let tempLiteral2 = `${emptyString}`;
 let tempLIteral1 = ``;
 console.log(emptyString); // empty string
 console.log(tempLIteral1); // empty string
